@@ -1,8 +1,12 @@
 (function (Crafty) {
     "use strict";
     var wallWidth = 0.5,
+
+    //TODO refactor to include radius value as selected by end user.
+
     // r = document.getElementById('radius'),
     // radius = parseInt(r.options[r.selectedIndex].value);
+    
     radius = 32;
 
     // our Cell component. Consists of four walls, positional information, and
