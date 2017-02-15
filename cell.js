@@ -1,13 +1,11 @@
-(function (Crafty) {
+function buildCell(){
+  (function (Crafty) {
     "use strict";
     var wallWidth = 0.5,
-
-    //TODO refactor to include radius value as selected by end user.
-
-    // r = document.getElementById('radius'),
-    // radius = parseInt(r.options[r.selectedIndex].value);
-    
-    radius = 32;
+        r = document.getElementById('radius'),
+        radius = parseInt(r.options[r.selectedIndex].value);
+        console.log('Testing:', radius);
+        // radius = 32;
 
     // our Cell component. Consists of four walls, positional information, and
     // information needed for DFS
@@ -113,4 +111,5 @@
             this.drawNode('rgb(0, 0, 255)');
         }
     });
-}(Crafty));
+  }(Crafty))
+};
